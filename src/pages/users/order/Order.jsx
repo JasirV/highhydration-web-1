@@ -201,7 +201,7 @@ if(a==="-"){
   return (
     <div className=' bg-opacity-5 justify-center flex'>
       {loader&&<Loader/>}
-        <div className='shadow-[10px_35px_30px_10px_rgba(0,0,0,0.3)] mt-4 p-1  md:w-1/4 s:w-full rounded-xl '>
+        <div className='shadow-[10px_35px_30px_10px_rgba(0,0,0,0.3)] mt-4 p-1 lg:1/3 md:w-1/4 s:w-full sm:w-full rounded-xl '>
             <div className='mt-6'>
         <Box  sx={{ width: '100%' }}>
       <Stepper activeStep={pageNum} alternativeLabel>
@@ -218,7 +218,7 @@ if(a==="-"){
         <img src={product?.image} alt="" />
     </div>
     <div>
-    <h5 className="text-xl mt-3 text-center font-bold">${price}</h5>
+    <h5 className="text-xl mt-3 text-center font-bold">₹{price}</h5>
     <div className='flex justify-center mt-5'>
     <button onClick={()=>{handlechnge('-')}}
   className="flex items-center justify-center bg-gray-800 text-white rounded-full w-8 h-8 text-lg font-bold transition-all duration-300 transform hover:bg-gray-900 hover:scale-105 active:bg-gray-700">

@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import SupplyHome from './SupplyHome';
-import '@testing-library/jest-dom/extend-expect';
+import { test } from 'vitest';
+import AdminChart from './AdminChart';
 
-test('renders SupplyHome component', () => {
+test('renders AdminChart component', () => {
     render(
         <MemoryRouter>
-            <SupplyHome />
+            <AdminChart/>
         </MemoryRouter>
     ); 
 });
